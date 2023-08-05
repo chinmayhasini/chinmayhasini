@@ -1,5 +1,5 @@
-import { useD3 } from './useD3';
 import React from 'react';
+import useD3 from './useD3';
 import * as d3 from 'd3';
 
 function BarChart({ data }) {
@@ -70,7 +70,7 @@ function BarChart({ data }) {
     <svg
       ref={ref}
       style={{
-        height: 300,
+        height: 250,
         width: "100%",
         marginRight: "0px",
         marginLeft: "0px",

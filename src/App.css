@@ -37,11 +37,11 @@
   }
 }
 .header {
-  background-image: url("../public/images/Centime_Logo.jpg");
-  min-height: 200px;
+  background-image: url("../public/images/centime_header.png");
+  min-height: 180px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   position: relative;
 }
 .footer {
@@ -57,4 +57,5 @@
   height: 100%;
   text-align: center;
   border-top: 1px solid gray;
+  padding-top: 10px;
 }

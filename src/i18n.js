@@ -1,29 +1,13 @@
-import i18next from "i18next";
-// ...
-const resources = {
-  en: {
-    translation: {
-      app_name: "Welcome Centime technology",
-    },
-  },
-  ar: {
-    translation: {
-      app_name: "جروتباسكت جروتباسكت",
-    },
-  },
-  ru: {
-    translation: {
-        app_name: "Добро пожаловать в технологию Centime"
-    }
-  }
-};
-i18next
-  // ...
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import Backend from 'i18next-http-backend';
+i18n
+  .use(Backend)
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
-    resources,
-    // lng: "ar", // Active language will be Arabic
-    // lng: "en",
-    lng: "ru" // Russia
-
+    debug: true,
+    fallbackLng: 'en',
   });
-export default i18next;
+export default i18n;

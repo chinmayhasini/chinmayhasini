@@ -1,16 +1,14 @@
 const initialState = {
-    chartData: []
+    language: "en"
 };
   
   const reducer = (state = initialState, action) => {
     switch (action.type) {
-      case "ADD_DATA":
+      case "CHANGE_LANGUAGE":
         return {
           ...state,
-          chartData: state.chartData,
+          language: state.language,
         };
-  
-      
       default:
         return state;
     }
