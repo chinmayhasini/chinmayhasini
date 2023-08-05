@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 const LanguageDropdown = () => {
     const dispatch = useDispatch()
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     let [language, setlanguage] = useState("en")
     const handleChange = (event) => {
         setlanguage(event.target.value)

@@ -2,10 +2,11 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 function Footer() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+  let footerText = t('main.footer')
   return (
     <div className="footer">
-      <h5>{t('main.footer')}</h5>
+      <h5>{footerText}</h5>
     </div>
   );
 }

@@ -1,8 +1,10 @@
 import React from 'react';
 import useD3 from './useD3';
 import * as d3 from 'd3';
+import { useSelector } from 'react-redux';
 
-function BarChart({ data }) {
+function BarChart() {
+  let data = useSelector((state) => state.chartData)
   const ref = useD3(
     (svg) => {
       const height = 500;
